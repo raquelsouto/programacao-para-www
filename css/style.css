@@ -5,6 +5,12 @@ body {
     background: linear-gradient(#fff, #f5f1ed);
 }
 
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+
 .inicio {
     font-family: 'Montserrat', sans-serif;
     background-color: #6247aa;
@@ -12,20 +18,8 @@ body {
     text-align: justify;
     padding: 15px;
     font-weight: bold;
-    font-size: 16;
-    
+    font-size: larger;
 }
-
-.banner {
-    position: relative;
-    width: 100%;
-    margin: auto;
-}
-
-.banner img {
-    width: 100%;
-}
-
 
 .lista-noticias {
     margin: 100px;
@@ -60,10 +54,18 @@ body {
     float: rigth;
     width: 100%;
     padding: 20px;
+    cursor: pointer;
 }
+
+.titulo-materia:hover {
+    opacity: 0.3;
+    color: #6247aa;
+    text-decoration: underline;
+} 
 
 .titulo-materia p {
     text-align: left;
+    font-weight: bold;
     font-size: 12;
     float: right;
     width: 250;
@@ -71,7 +73,16 @@ body {
     padding: 20px;
 }
 
-.botao {
+.footer {
+    background-color: #6247aa;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 20px;
+    clear: both;
+}
+
+/* .botao {
     display: inline-block;
     text-decoration: none;
     background-color: #6247aa;
@@ -86,19 +97,9 @@ body {
 .botao:hover {
     background-color: #b298dc;
     opacity: 0.3;
-}
+} */
 
-.footer {
-    background-color: #6247aa;
-    text-align: center;
-    color: #fff;
-    font-size: 12px;
-    padding: 20px;
-    clear: both;
-}
-
-
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
     .banner p {
         font-size: 22px;
         bottom: 70px;
@@ -119,7 +120,7 @@ body {
 
     .botao {
         font-size: 16px;
-    }
-}
+    } */
+
 
 
