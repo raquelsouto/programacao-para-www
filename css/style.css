@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #fff;
     margin: 0px;
-    background: linear-gradient(#fff, #f5f1ed);
+    background: linear-gradient(#f5f3f4, #f5f1ed);
 }
 
 .banner {
@@ -15,112 +15,100 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #6247aa;
     color: #fff;
+    display: flex;
     text-align: justify;
     padding: 15px;
     font-weight: bold;
-    font-size: larger;
+    font-size: 1.5em;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
-.lista-noticias {
-    margin: 100px;
-    width: 50%;
+main {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.noticia {
-    height: 360px;
-    margin-right: 30px;
-}
-
-.noticia img {
-    width: 35%;
+main .noticias img {
+    width: 25%;
+    align-items: center;
+    text-align: center;
     padding: 50px;
     float: left;
-    margin: 20px 0; 
     border-radius: 10px;
     margin-bottom: 10px;
     opacity: 1;
     transition: 400ms;
 }
 
-.noticia img:hover {
+main .noticias img:hover {
     opacity: 0.3;
     transform: scale(1.2);
 }
 
-.titulo-materia {
-    text-align: left;
-    font-size: 14;
+main .noticias h1 {
+    width: 70%;
+    padding-top: 2%;
+    align-items: center;
+    font-size: 2em;
     font-weight: bold;
-    float: rigth;
-    width: 100%;
-    padding: 20px;
     cursor: pointer;
 }
 
-.titulo-materia:hover {
+main .noticias h1:hover {
     opacity: 0.3;
     color: #6247aa;
     text-decoration: underline;
 } 
 
-.titulo-materia p {
-    text-align: left;
-    font-weight: bold;
-    font-size: 12;
-    float: right;
-    width: 250;
-    height: 100%;
-    padding: 20px;
+main .noticias p {
+    width: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer {
     background-color: #6247aa;
     text-align: center;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 20px;
     clear: both;
 }
 
-/* .botao {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #6247aa;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 12px;
-    transition: all 1s;
-    cursor: pointer;
-}
-
-.botao:hover {
-    background-color: #b298dc;
-    opacity: 0.3;
-} */
-
-/* @media (min-width: 900px) {
-    .banner p {
-        font-size: 22px;
-        bottom: 70px;
-    }
-
+@media (max-width: 900px) {
     .inicio {
-        font-size: 16px;
+        font-size: 2em;
     }
 
-    .noticias, .lista-noticias {
-        float: left;
-        width: calc(50% - 10px)
+    main {
+        justify-content: space-between;
     }
 
-    .noticia:nth-child(even) {
-      margin-left: 10px;  
+    main .noticias img {
+        width: calc(75% - 10px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .botao {
-        font-size: 16px;
-    } */
+    main .noticias h1 {
+        font-size: 1.5em;
+        width: calc(75% - 10px);
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
 
-
-
+    main .noticias p {
+        width: calc(75% - 10px);
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        padding: 50px
+    }
+}
