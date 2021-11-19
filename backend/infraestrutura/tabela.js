@@ -11,7 +11,7 @@ class Tabela {
             if (erro) {
                 console.log(erro)
             } else {
-                console.log('Tabela atendimentos criada com sucesso')
+                console.log('Tabela de Postagem criada com sucesso')
             }
         })
     }
