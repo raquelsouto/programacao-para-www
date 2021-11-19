@@ -9,7 +9,7 @@ module.exports = () => {
     app.use(bodyParser.urlencoded({ extended: true }))
  
     consign()
-            .include('controllers')
+            .include('controller')
             .into(app)
  
     return app

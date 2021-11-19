@@ -5,11 +5,11 @@ class Postagem {
     adicionar(postagem, res) {
         const data = moment(postagem.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS')
 
-        const atendimentoDatado = { ...postagem, data }
+        const postDatado = { ...postagem, data }
 
         const sql = 'INSERT INTO Postagem SET ?'
 
-        conexao.query(sql, atendimentoDatado, (erro, resultados) => {
+        conexao.query(sql, postDatado, (erro, resultados) => {
             if (erro) {
                 res.status(400).json(erro)
             } else {
